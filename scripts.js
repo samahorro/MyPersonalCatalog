@@ -30,45 +30,63 @@ const CURB_POSTER_URL =
 const EAST_LOS_HIGH_POSTER_URL =
   "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
 
-// This is an array of strings (TV show titles)
-let titles = [
-  "Fresh Prince of Bel Air",
-  "Curb Your Enthusiasm",
-  "East Los High",
+// Array of Coffee Shops
+const coffeeShops = [
+  { name: "Da Vien",image: "images/Da Vien Matcha.png"},
+  { name: "7 Leaves", image: "images/images.jpg"},
+  { name: "Vivot",image: "images/vivot.jpg"} 
 ];
+
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
 // This function adds cards the page to display the data in the array
-function showCards() {
+function showCafes() {
   const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
-  const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < titles.length; i++) {
-    let title = titles[i];
+  for (let i = 0; i < coffeeShops.length; i++) {
 
-    // This part of the code doesn't scale very well! After you add your
-    // own data, you'll need to do something totally different here.
-    let imageURL = "";
-    if (i == 0) {
-      imageURL = FRESH_PRINCE_URL;
-    } else if (i == 1) {
-      imageURL = CURB_POSTER_URL;
-    } else if (i == 2) {
-      imageURL = EAST_LOS_HIGH_POSTER_URL;
-    }
+    let cafe = coffeeShops[i];
 
-    const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
-    cardContainer.appendChild(nextCard); // Add new card to the container
+    // Creating a div for each cafe
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Creating the Image
+    const img = document.createElement("img");
+    img.src = cafe.image;
+    img.alt = cafe.name + "Image";
+
+    // Creates the Coffee Shop Name
+    const name = document.createElement("p");
+    name.textContent = cafe.name;
+
+    const button = document.createElement("button");
+    button.textContent = "Details";
+    button.className = "details-button";
+
+    button.addEventListener("click")
+
+    // Adds image and name to the card
+
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(button);
+
+    // Adds the card to the container
+
+    cardContainer.appendChild(card);
   }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+// This calls the addCards() function when the page is first loaded
+document.addEventListener("DOMContentLoaded", showCafes);
+
+
+/*function editCardContent(card, newTitle, newImageURL) {
   card.style.display = "block";
 
-  const cardHeader = card.querySelector("h2");
+  const cardHeader = card.querySelector("h2"); // h2 is TV Show Title
   cardHeader.textContent = newTitle;
 
   const cardImage = card.querySelector("img");
@@ -81,10 +99,8 @@ function editCardContent(card, newTitle, newImageURL) {
   console.log("new card:", newTitle, "- html: ", card);
 }
 
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
 
-function quoteAlert() {
+function detailsAlert() {
   console.log("Button Clicked!");
   alert(
     "I guess I can kiss heaven goodbye, because it got to be a sin to look this good!"
@@ -95,3 +111,5 @@ function removeLastCard() {
   titles.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 }
+
+*/
