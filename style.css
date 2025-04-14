@@ -8,7 +8,7 @@ body {
   background-color:	#E7F0DC;
   margin: 20px;
   border-radius: 22px;
-  width: 95%;
+  
 
 }
 
@@ -16,8 +16,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px; /* this spaces out the cards evenly */
-  padding: 30px;
+  gap: 50px; /* this spaces out the cards evenly */
+  padding: 20px;
 }
 
 .title {
@@ -30,7 +30,7 @@ body {
 
 body{
   background: linear-gradient(90deg, #658147, #597445);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Georgia', serif;
 }
 
 .card {
@@ -47,5 +47,76 @@ body{
   width: 100%;
   height: 230px;
   border-radius: 10px;
+}
+
+.rating {
+  font-size: 0.85em;
+  color: #E7F0DC;
+  margin-bottom: 8px;
+}
+
+.drink {
+  font-size: 0.85em;
+  color: #E7F0DC;
+  margin-bottom: 8px;
+}
+
+.cafeName {
+  font-size: 1.5em;
+  color: #DDEB9D;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+h2 {
+  font-size: 2.5em;       /* Adjust size as needed */
+  font-weight: bold;    /* Make it bold */
+  color: #E7F0DC;       /* Optional: a green tea vibe */
+  margin-top: 20px;
+  text-align:center;   /* Optional: center the heading */
+  font-family: 'Georgia', serif; /* Optional: a cozy font */
+}
+
+
+.dropdown button{
+  font-size: 1.5em;       /* Adjust size as needed */  
+  color: #E7F0DC;
+  background-color:#97866A;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+}
+
+.dropdown .item{
+  display: block;
+  color:#97866A;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1.33em;
+  cursor: pointer;
+}
+
+.dropdown .content{
+  
+  font-weight: bold;
+  position:relative;
+  background-color:#E7F0DC;
+  min-width: 145.5px;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown .show {
+  display: block; /* Show when .show class is added */
+}
+
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  position: relative; /* ensures dropdown is positioned correctly */
 }
 
