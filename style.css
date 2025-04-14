@@ -70,17 +70,17 @@ body{
 
 
 h2 {
-  font-size: 2.5em;       /* Adjust size as needed */
-  font-weight: bold;    /* Make it bold */
-  color: #E7F0DC;       /* Optional: a green tea vibe */
+  font-size: 2.5em;       
+  font-weight: bold;   
+  color: #E7F0DC;      
   margin-top: 20px;
-  text-align:center;   /* Optional: center the heading */
-  font-family: 'Georgia', serif; /* Optional: a cozy font */
+  text-align:center;  
+  font-family: 'Georgia', serif; 
 }
 
 
 .dropdown button{
-  font-size: 1.5em;       /* Adjust size as needed */  
+  font-size: 1.5em;       
   color: #E7F0DC;
   background-color:#97866A;
   font-weight: bold;
@@ -110,13 +110,13 @@ h2 {
 }
 
 .dropdown .show {
-  display: block; /* Show when .show class is added */
+  display: block; 
 }
 
 
 .dropdown {
   display: flex;
   justify-content: center;
-  position: relative; /* ensures dropdown is positioned correctly */
+  position: relative; 
 }
 
