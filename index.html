@@ -4,25 +4,28 @@
     <title>Sam's Personal Catalog</title>
     <meta name="description" content="Sam's Personal Catalog" />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
+    <!-- Main Header -->
     <header class="main-header">
-      <h1 class="title">Sam's Cafe Catalog ˗ˏˋ☕ˎˊ˗</h1>
+      <h1 class="title">Sam's Cafe Catalog ˗ˏˋ🍵ˎˊ˗</h1>
     </header>
 
-    <div class="details">
-      <button type="button"></button>
+    <h2>Matcha Drinks🌿</h2>
+
+    <!-- Dropdown for Sorting -->
+    <div class="dropdown">
+      <button class="sort-btn">Sort By:</button>
+
+      <div class="content" id="dropdown">
+        <div class="item" data-sort="Rating">Rating</div>
+        <div class="item" data-sort="Price">Price</div>
+      </div>
     </div>
 
-    <h2>Matcha Drinks</h2>
-    <ul>
-      <li>Description : Banana Matcha Latte</li>
-      <li>Rating: 8.6/10</li>
-      <li>Location: Stanton,CA</li>
-    </ul>
-
+    <!-- Container where drink cards will be displayed with the array-->
     <div id="card-container"></div>
+    <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
