@@ -1,10 +1,10 @@
 
 // Array of Coffee Shops
 const coffeeShops = [
-  { name: "Da Vien", image: "images/Da Vien Matcha.png", drink: "Banana Matcha Latte", desc: "Creamy/Heavy & Sweet", rating: 8, price: 7 },
-  { name: "7 Leaves", image: "images/7 Leaves Matcha.png", drink: "Matcha Soy Latte", desc: "Light & Very Sweet", rating: 5, price: 5 },
+  { name: "Da Vien", image: "images/DaVien.png", drink: "Banana Matcha Latte", desc: "Creamy/Heavy & Sweet", rating: 8, price: 7 },
+  { name: "7 Leaves", image: "images/7Leaves.png", drink: "Matcha Soy Latte", desc: "Light & Very Sweet", rating: 5, price: 5 },
   { name: "Vivot", image: "images/vivot.jpg", drink: "Matcha Oat Latte", desc: "Simple & Slightly Bitter", rating: 7, price: 8 },
-  { name: "Tierra Mia Coffee", image: "images/Tierra Mia Matcha.png", drink: "Matcha Latte", desc: "Smooth & Semi-Sweet", rating: 6, price: 6 },
+  { name: "Tierra Mia Coffee", image: "images/Tierra.png", drink: "Matcha Latte", desc: "Smooth & Semi-Sweet", rating: 6, price: 6 },
   { name: "Memory Look", image: "images/memoryLook.jpg", drink: "Einspanner Matcha Latte", desc: "Heavy & Very-Sweet", rating: 9, price: 7.50 },
   { name: "Starbucks", image: "images/IcedMatchaTeaLatte.jpg", drink: "Iced Matcha Latte", desc: "Little Watery & Semi-Sweet", rating: 1.5, price: 5 },
   { name: "Matcha Cafe Maiko", image: "images/matchalattefloat.jpg", drink: "Matcha Latte Float", desc: "Very Good with Matcha Ice Cream ON TOP!", rating: 9.2, price: 8.50 }
