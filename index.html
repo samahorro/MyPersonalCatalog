@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>Sam's Personal Catalog</title>
-    <meta name="description" content="Sam's Personal Catalog" />
+    <meta name="description" content="Sam's Cafe Catalog" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Main Header -->
     <header class="main-header">
-      <h1 class="title">Sam's Cafe Catalog ˗ˏˋ🍵ˎˊ˗</h1>
+      <h1 class="title">˗ˏˋSam's Cafe Catalog🍵ˎˊ˗</h1>
     </header>
 
     <h2>Matcha Drinks🌿</h2>
@@ -17,15 +17,24 @@
     <!-- Dropdown for Sorting -->
     <div class="dropdown">
       <button class="sort-btn">Sort By:</button>
-
       <div class="content" id="dropdown">
-        <div class="item" data-sort="Rating">Rating</div>
-        <div class="item" data-sort="Price">Price</div>
+        <div class="item" data-sort="Rating">Rating: (High⬆️to Low⬇️)</div>
+        <div class="item" data-sort="Price">Price: 💲 - 💲💲💲</div>
+      </div>
+    </div>
+
+    <div class="new-dropdown">
+      <button class="filter-btn">Filter By Price:</button>
+      <div class="elements" id="new-dropdown">
+        <div class="item" data-price="low">Low ($1 - $5)</div>
+        <div class="item" data-price="mid">Mid ($6 - $7)</div>
+        <div class="item" data-price="high">High ($8+)</div>
       </div>
     </div>
 
     <!-- Container where drink cards will be displayed with the array-->
     <div id="card-container"></div>
+
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
